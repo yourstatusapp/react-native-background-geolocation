@@ -10,7 +10,6 @@ import {
 const { RNBackgroundGeolocation } = NativeModules;
 const EventEmitter = new NativeEventEmitter(RNBackgroundGeolocation);
 
-import TransistorAuthorizationToken from "./TransistorAuthorizationToken";
 
 import * as Events from "./Events";
 
@@ -78,7 +77,7 @@ const validateConfig = (config) => {
     };
   }
 
-  config = TransistorAuthorizationToken.applyIf(config);
+  // config = TransistorAuthorizationToken.applyIf(config);
 
   return config;
 };

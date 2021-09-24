@@ -9,7 +9,6 @@ import * as Events from './Events';
 import NativeModule from './NativeModule';
 import DeviceSettings from './DeviceSettings';
 import Logger from './Logger';
-import TransistorAuthorizationToken from './TransistorAuthorizationToken';
 
 let _deviceSettingsInstance = null;
 
@@ -682,13 +681,13 @@ export default class BackgroundGeolocation {
     }
   }
 
-  static findOrCreateTransistorAuthorizationToken(orgname, username, url) {
-    return TransistorAuthorizationToken.findOrCreate(orgname, username, url);
-  }
+  // static findOrCreateTransistorAuthorizationToken(orgname, username, url) {
+  //   return TransistorAuthorizationToken.findOrCreate(orgname, username, url);
+  // }
 
-  static destroyTransistorAuthorizationToken(url) {
-    return TransistorAuthorizationToken.destroy(url);
-  }
+  // static destroyTransistorAuthorizationToken(url) {
+  //   return TransistorAuthorizationToken.destroy(url);
+  // }
 
   /**
   * Insert a log message into the plugin's log database
